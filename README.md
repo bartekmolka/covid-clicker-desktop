@@ -9,3 +9,5 @@
 ```bash
 npm start 
 ```
+
+dawac pjenondze
