@@ -1,2 +1,2 @@
 # covid-clicker
-cos
+essa byq
