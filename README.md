@@ -11,4 +11,6 @@ npm start
 ```
 
 dawac pjenondze
+```bash 
 bjedny jestem :(
+    ```
