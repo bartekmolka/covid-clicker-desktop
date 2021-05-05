@@ -1,9 +1,11 @@
-# covid-clicker
+# Covid-clicker
 
-essa byq
+---
 
-###### Paweł napisz tu coś
+## Ta aplikacja jest zrobiona  na reaccie
 
-###### Jak co to Bartek T z tej strony ciekawe czy to widać
+Żeby odpalić projekt wpisz:
 
-opis jakiś tej strony
+```bash
+npm start 
+```
