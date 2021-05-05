@@ -11,3 +11,4 @@ npm start
 ```
 
 dawac pjenondze
+bjedny jestem :(
