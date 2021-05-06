@@ -45,8 +45,8 @@
     .list {
         position: absolute;
         left: 0px;
-        height: 91vh;
-        top: 7vh;
+        height: 96vh;
+        top: 4vh;
         background-color: var(--primary-color);
         justify-content: space-around;
         width: 50%;

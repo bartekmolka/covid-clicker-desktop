@@ -1,9 +1,18 @@
 .main
 {
+    display: flex;
+    justify-content: space-around;
     margin: 5vmin;
 }
 .virus
 {
     position: absolute;
     width: 40vw;
+}
+
+@media screen and (max-width:768px) {
+    
+    .main {
+        margin-left: 75vh;
+    }
 }
