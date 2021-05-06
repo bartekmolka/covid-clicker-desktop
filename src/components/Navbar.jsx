@@ -14,7 +14,7 @@ export default function Navbar()
             <ul className={styles.list}>
                 <NavLink name="Covid clicker" link="/"/>
                 <NavLink name="O nas" link="/"/>
-                <NavLink name="Kontakt" link="/"/>
+                <NavLink name="Kontakt" link="/Kontakt.html"/>
                 <ThemeSwitch/>
             </ul>
             
