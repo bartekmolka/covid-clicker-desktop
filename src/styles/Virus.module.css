@@ -1,0 +1,13 @@
+.viruscontainer
+{
+    display: grid;
+    place-items: center;
+}
+.virus
+{
+
+}
+.virus:active
+{
+
+}
