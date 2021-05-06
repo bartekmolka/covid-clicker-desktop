@@ -1,0 +1,28 @@
+.bar
+{
+    color: var(--primary-color);
+}
+.text
+{
+    color: var(--text-color);
+}
+.earth
+{
+    font-size: 10vmin;
+    background-image: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    animation: earth-rotation 2s linear infinite;
+}
+@keyframes earth-rotation
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
