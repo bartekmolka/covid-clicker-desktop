@@ -1,5 +1,5 @@
 .main {
-    background-color: rgb(255, 37, 37);
+    background-color: var(--primary-color);
     height: 10vh;
     display: flex;
     align-items: center;
@@ -28,9 +28,10 @@
 .burger div{
     width: 45px;
     height: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text-color);
     margin: 5px;
     transition: transform 0.3s ease;
+    border-radius: 10000000px;
 }
 
 @media screen and (max-width:1024px) {
@@ -46,7 +47,7 @@
         left: 0px;
         height: 91vh;
         top: 7vh;
-        background-color: rgb(255, 37, 37);
+        background-color: var(--primary-color);
         justify-content: space-around;
         width: 50%;
         display: flex;
