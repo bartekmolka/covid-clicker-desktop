@@ -16,8 +16,8 @@ export default function Navbar()
             </div>  
             <ul className={isRel ? styles.mainon : styles.list}>
                 <NavLink name="Covid clicker" link="/"/>
-                <NavLink name="O nas" link="/"/>
-                <NavLink name="Kontakt" link="/Kontakt.html"/>
+                <NavLink name="O nas" link="/o-nas"/>
+                <NavLink name="Kontakt" link="/kontakt"/>
                 <ThemeSwitch/>
             </ul>
             
