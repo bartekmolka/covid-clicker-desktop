@@ -18,6 +18,6 @@ export default function GameScreen() {
             alert("Tak się nie bawimy")
             return
         }
-        setClicks(clicks++)
+        setClicks(++clicks)
     }
 }
