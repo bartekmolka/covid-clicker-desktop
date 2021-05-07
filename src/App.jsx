@@ -1,19 +1,27 @@
-// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Foot from './components/Foot';
-import GameScreen from "./components/GameScreen"
-import SideBar from "./components/SideBar"
+import GameScreen from "./pages/GameScreen"
+import Contact from "./pages/Contact"
+import About from "./pages/About"
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="screen">
+    <Router>
+    <Navbar/>
+    <Switch>
+      <Route path="/kontakt">
+        <Contact/>
+      </Route>
+      <Route path="/o-nas">
+        <About/>
+      </Route>
+      <Route path="/">
         <GameScreen/>
-        <SideBar/>
-      </div>
-      <Foot/>
-    </div>
+      </Route>
+    </Switch>
+    <Foot/>
+  </Router>
   );
 }

@@ -1,14 +1,14 @@
 import * as styles from "../styles/NavLink.module.css"
-
+import {Link} from "react-router-dom"
 export default function NavLink(props)
 {
     return(
         <li>
-            <a href={props.link} className={styles.links}>
+            <Link to={props.link} className={styles.links}>
                 <h4>
                     {props.name}
                 </h4>
-            </a>
+            </Link>
         </li>
     )
 }
