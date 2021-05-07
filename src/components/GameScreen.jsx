@@ -11,7 +11,7 @@ export default function GameScreen() {
     })
     return (
         <div className={styles.main}>
-            <Virus className={styles.virus} toggle={OnVirusClick} />
+            <Virus className={styles.virus} toggle={OnVirusClick} onclick={OnClick}/>
             <ClickCounter clickCount={clicks} clicksToWin={111} time={`Czas: ${Math.floor(Time)}s`}/>
         </div>
     )
@@ -20,6 +20,9 @@ export default function GameScreen() {
             alert("Tak się nie bawimy")
             return
         }
+        setClicks(clicks++)
+    }
+    function OnClick() {
         setClicks(clicks++)
     }
 }
