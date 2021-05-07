@@ -9,7 +9,7 @@ export default function Navbar()
     
     return(
         <nav className={isRel ? styles.main + " " + styles.mainon : styles.main}>
-            <div className={styles.burger} onClick={() => setIsRel(!isRel)}>
+            <div className={isRel ? styles.burger + " " + styles.burgeron : styles.burger} onClick={() => setIsRel(!isRel)}>
                     <div className={styles.line1}></div>
                     <div className={styles.line2}></div>
                     <div className={styles.line3}></div>

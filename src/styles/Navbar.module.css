@@ -40,7 +40,7 @@
         position: absolute;
         left: 0px;
         height: 96vh;
-        top: 4vh;
+        top: 5vh;
         background-color: var(--primary-color);
         justify-content: space-around;
         width: 50%;
@@ -56,14 +56,14 @@
     }
 }
 
-.burger .linia1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+.burgeron .line1 {
+    transform: rotate(45deg) translate(8px, 6px);
 }
 
-.burger .linia2 {
+.burgeron .line2 {
     opacity: 0;
 }
 
-.burger .linia3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+.burgeron .line3 {
+    transform: rotate(-45deg) translate(8px, -6px);
 }
