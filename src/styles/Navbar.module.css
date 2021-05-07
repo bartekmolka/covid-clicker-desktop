@@ -22,7 +22,7 @@
 .burger {
     margin: 10px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 
 .burger div{
@@ -34,15 +34,9 @@
     border-radius: 10000000px;
 }
 
-@media screen and (max-width:1024px) {
-    .list {
-        width: 65%;
-    } 
-}
-
 @media screen and (max-width:768px) {
     
-    .list {
+    .mainon > ul {
         position: absolute;
         left: 0px;
         height: 96vh;
@@ -55,7 +49,21 @@
         align-items: center;
     }
 
+
+
     .burger {
         display: block;
     }
+}
+
+.burger .linia1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger .linia2 {
+    opacity: 0;
+}
+
+.burger .linia3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
