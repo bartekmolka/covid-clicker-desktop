@@ -9,20 +9,15 @@ export default function GameScreen() {
     let [Time, setTime] = useState(0)
     setInterval(() => setTime(performance.now()), 1000)
     return (
-<<<<<<< Updated upstream:src/pages/GameScreen.jsx
         <div className="screen">
             <div className={styles.main}>
                 <Virus className={styles.virus} toggle={OnVirusClick}/>
-                <ClickCounter clickCount={clicks} clicksToWin={111} time={`Czas: ${Math.floor(Time/1000)}s`}/>
+                <ClickCounter clickCount={clicks} clicksToWin={cases()} time={`Czas: ${Math.floor(Time/1000)}s`}/>
             </div>
             <SideBar/>
-=======
-        <div className={styles.main}>
-            <Virus className={styles.virus} toggle={OnVirusClick}/>
-            <ClickCounter clickCount={clicks} clicksToWin={cases()} time={`Czas: ${Math.floor(Time/1000)}s`}/>
->>>>>>> Stashed changes:src/components/GameScreen.jsx
-        </div>
-    )
+  
+        </div>   )
+    
     function OnVirusClick(e) {
         if (!e.isTrusted) {
             alert("Tak się nie bawimy")
