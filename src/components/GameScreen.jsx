@@ -6,13 +6,11 @@ import Virus from "./Virus"
 export default function GameScreen() {
     let [clicks, setClicks] = useState(0)
     let [Time, setTime] = useState(0)
-    useEffect(() => {
-        setTime(performance.now() / 1000)
-    })
+    setInterval(() => setTime(performance.now()), 1000)
     return (
         <div className={styles.main}>
-            <Virus className={styles.virus} toggle={OnVirusClick} onclick={OnClick}/>
-            <ClickCounter clickCount={clicks} clicksToWin={111} time={`Czas: ${Math.floor(Time)}s`}/>
+            <Virus className={styles.virus} toggle={OnVirusClick}/>
+            <ClickCounter clickCount={clicks} clicksToWin={111} time={`Czas: ${Math.floor(Time/1000)}s`}/>
         </div>
     )
     function OnVirusClick(e) {
@@ -20,9 +18,6 @@ export default function GameScreen() {
             alert("Tak się nie bawimy")
             return
         }
-        setClicks(clicks++)
-    }
-    function OnClick() {
         setClicks(clicks++)
     }
 }
