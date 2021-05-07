@@ -9,12 +9,18 @@ export default function GameScreen() {
     let [Time, setTime] = useState(0)
     setInterval(() => setTime(performance.now()), 1000)
     return (
+<<<<<<< Updated upstream:src/pages/GameScreen.jsx
         <div className="screen">
             <div className={styles.main}>
                 <Virus className={styles.virus} toggle={OnVirusClick}/>
                 <ClickCounter clickCount={clicks} clicksToWin={111} time={`Czas: ${Math.floor(Time/1000)}s`}/>
             </div>
             <SideBar/>
+=======
+        <div className={styles.main}>
+            <Virus className={styles.virus} toggle={OnVirusClick}/>
+            <ClickCounter clickCount={clicks} clicksToWin={cases()} time={`Czas: ${Math.floor(Time/1000)}s`}/>
+>>>>>>> Stashed changes:src/components/GameScreen.jsx
         </div>
     )
     function OnVirusClick(e) {
@@ -23,5 +29,11 @@ export default function GameScreen() {
             return
         }
         setClicks(++clicks)
+    }
+    function cases (){
+            fetch("https://pulsmedycyny.pl/covid-19-w-polsce-liczba-zakazen-koronawirusem-i-zgonow-aktualizacja-984368")
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+        return 111
     }
 }
