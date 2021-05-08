@@ -39,7 +39,7 @@
     .mainon > ul {
         position: absolute;
         left: 0px;
-        height: 96vh;
+        height: 86vh;
         top: 5vh;
         background-color: var(--primary-color);
         justify-content: space-around;
