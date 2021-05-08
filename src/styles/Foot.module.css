@@ -10,5 +10,6 @@
     display: flex;
     justify-content: space-around;
     color: var(--text-color);
+    z-index: 2;
 
 }
