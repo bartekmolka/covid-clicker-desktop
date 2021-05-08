@@ -3,7 +3,7 @@ import * as styles from "../styles/GameScreen.module.css"
 import ClickCounter from "../components/ClickCounter"
 import Virus from "../components/Virus"
 import SideBar from "../components/SideBar"
-
+var f
 var b
 var c 
 const date = new Date()
@@ -26,7 +26,7 @@ export default function GameScreen() {
         <div className="screen">
             <div className={styles.main}>
                 <Virus className={styles.virus} toggle={OnVirusClick}/>
-                <ClickCounter clickCount={clicks} clicksToWin={c} time={`Czas: ${Math.floor(Time/1000)}s`}/>
+                <ClickCounter clickCount={clicks} clicksToWin={Math.round(c/1000)} time={`Czas: ${Math.floor(Time/1000)}s`}/>
             </div>
             <SideBar/>
   
