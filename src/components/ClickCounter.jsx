@@ -1,10 +1,24 @@
+import { render } from "@testing-library/react"
 import { useState } from "react"
+import { nativeTouchData } from "react-dom/cjs/react-dom-test-utils.development"
+import { NavLink } from "react-router-dom";
 import * as styles from "../styles/ClickCounter.module.css"
+import 'react-notifications-component/dist/theme.css'
 
 export default function ClickCounter({clickCount, clicksToWin, time})
-{
-    return(
+{ 
+    
+      function win () {
+       
+
+          
+        }
+        
+        
+    return( 
         <div className={styles.counter}>
+     {clickCount==clicksToWin ? ( win() ) : ("") }
+      
             <h1 className={styles.text}>Kliknięto {clickCount} razy</h1>
             <progress className={styles.bar} value={clickCount} max={clicksToWin}>{Math.round((clickCount / clicksToWin) * 100, 2) + "%"}</progress>
             <h5 className={styles.text}>{Math.round((clickCount / clicksToWin) * 100, 2) + "%"}</h5>
