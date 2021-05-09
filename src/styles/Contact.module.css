@@ -1,4 +1,7 @@
 .contact{
 text-align: center;
 padding: 5%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
