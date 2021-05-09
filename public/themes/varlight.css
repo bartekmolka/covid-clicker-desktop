@@ -3,7 +3,7 @@
     --primary-color: rgb(255, 37, 37);
     --secondary-color: rgb(218, 85, 85);
     --gradient: linear-gradient(90deg, rgba(226,184,31,1) 0%, rgba(255,85,85,1) 49%, rgba(252,176,69,1) 100%);
-    --bg-color2: rgba(255,85,85,1) 49%;
+    --bg-color: rgba(255,85,85,1) 49%;
     --text-color: rgb(16, 16, 16);
 
     fill: black;
