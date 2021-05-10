@@ -1,8 +1,10 @@
-.my {
-    float: left;
-    
+.oNas {
+    display: flex;
+    margin: 5vh;
 }
 
-.oNas {
-    margin: 5vh;
+.tekst {
+    width: 93%; 
+    height: 300px; 
+    background-color: var(--bg-color);
 }

@@ -4,12 +4,11 @@
     border: 2px solid var(--bg-color);
     border-radius: 15px;
     width: 7%;
-    float: right;
     top: 30vh;
     -webkit-box-shadow: 3px 3px 19px 5px rgba(0,0,0,0.4); 
     box-shadow: 3px 3px 19px 5px rgba(0,0,0,0.4);
     flex-direction: column;
-    height: 82vh;
+    height: 72vh;
     justify-content: space-around;
 }
 
