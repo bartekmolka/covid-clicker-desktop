@@ -18,18 +18,23 @@ export default function About() {
           pasją i powodem, dla którego wybraliśmy właśnie ten kierunek.
           Napisaliśmy tą stronę w celu rozwijania swoich kompetencji w tej
           dziedzinie, oraz lepszego poznania Javascripta i biblioteki React.
+          Wierzymy, że programowania nie da się nauczyć tylko w teorii.
         </div>
-        <div id="4">
+        <div class="cztery">
           W przypadku wystąpienia na stronie błędów prosimy kontakt:
         </div>
         <ul id="5">
           <li>
-            mailowy, na adres <span id="6">B.P.Studio@INT.PL</span>
+            mailowy, na adres <span className= {styles.kontakt}>B.P.Studio@INT.PL</span>
           </li>
           <li>
-            telefoniczny, na numer <span id="7">+48 602 622 102</span>
+            telefoniczny, na numer <span className= {styles.kontakt}>+48 602 622 102</span>
           </li>
         </ul>
+        <div className={styles.cytat}>” Programiści ścigają się z wszechświatem, tworząc większe i
+         lepsze idiotoodporne programy, podczas gdy wszechświat stara się stworzyć
+         większych i lepszych idiotów. Jak na razie wszechświat wygrywa. ” – Rich Cook
+</div>
       </div>
 
       <AboutUs />
