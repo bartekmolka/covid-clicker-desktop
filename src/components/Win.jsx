@@ -1,0 +1,16 @@
+import * as styles from "../styles/Win.module.css"
+export default function Win({ score, time }) {
+    return (
+        <div className={styles.darkener}>
+
+            <div className={styles.scorecontainer}>
+                <h2>Gratulacje! Wygrałeś! Pokonałeś koronawirusa lepiej niż Morawiecki! (co nie jest czymś wiekim wsm)</h2>
+                <p>Liczba pokonanych koronawirusów {score}</p>
+                <p>Twój czas: {time}</p>
+                <a href=".">
+                    <button>Zagraj ponownie</button>
+                </a>
+            </div>
+        </div>
+    )
+}

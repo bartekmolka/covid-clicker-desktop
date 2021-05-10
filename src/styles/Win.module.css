@@ -1,0 +1,15 @@
+.darkener {
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.692);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    /* top: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+}
+
+.scorecontainer {
+    background-color: var(--bg-color);
+}

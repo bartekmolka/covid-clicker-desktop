@@ -3,11 +3,20 @@
     display: grid;
     place-items: center;
 }
-.virus
+@keyframes virus-rotation
 {
-    
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .virus:active
 {
 
+}
+
+.virus {
+    animation: virus-rotation 10s linear infinite;
 }
