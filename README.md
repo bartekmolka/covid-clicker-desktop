@@ -2,15 +2,16 @@
 
 ---
 
-## Ta aplikacja jest zrobiona  na reaccie
+## Ta aplikacja jest zrobiona na reaccie
 
 Żeby odpalić projekt wpisz:
 
 ```bash
-npm start 
+npm start
 ```
 
 dawac pjenondze
-```bash 
+
+```bash
 bjedny jestem :(
 ```
