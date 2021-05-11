@@ -28,7 +28,7 @@ export default function About() {
             mailowy, na adres <span className= {styles.kontakt}>B.P.Studio@INT.PL</span>
           </li>
           <li>
-            telefoniczny, na numer <span className= {styles.kontakt}>+48 602 622 102</span>
+            lub telefoniczny, na numer <span className= {styles.kontakt}>+48 602 622 102</span>
           </li>
         </ul>
         <div className={styles.cytat}>” Programiści ścigają się z wszechświatem, tworząc większe i

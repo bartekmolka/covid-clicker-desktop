@@ -4,14 +4,11 @@ import { nativeTouchData } from "react-dom/cjs/react-dom-test-utils.development"
 import { NavLink } from "react-router-dom";
 import * as styles from "../styles/ClickCounter.module.css";
 import "react-notifications-component/dist/theme.css";
-
 export default function ClickCounter({ clickCount, clicksToWin, time }) {
-  function win() {
-  }
 
   return (
     <div className={styles.counter}>
-      {clickCount == clicksToWin ? (win()) : ("")}
+      { clickCount > (Math.round(clicksToWin/2)-10) && clickCount < (Math.round(clicksToWin/2)+10)  ? (<div className={styles.text}>Gratulacje! Liczba twoich kliknięć jest równa połowie nowych zakażeń na Covid-19 w Polsce.</div>) : ("")}
 
       <h1 className={styles.text}>Kliknięto {clickCount} razy</h1>
       <progress className={styles.bar} value={clickCount} max={clicksToWin}>
@@ -36,4 +33,5 @@ export default function ClickCounter({ clickCount, clicksToWin, time }) {
       <h2 className={styles.text}>{time}</h2>
     </div>
   );
-}
+
+  }
