@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as styles from "../styles/GameScreen.module.css";
 import ClickCounter from "../components/ClickCounter";
 import Virus from "../components/Virus";
-import SideBar from "../components/SideBar";
 import Win from "../components/Win";
+import PowerUpsTab from "../components/PowerUpsTab";
 
 let newCases;
 const date = new Date();
@@ -24,6 +24,7 @@ fetch(
 export default function GameScreen() {
   let [clicks, setClicks] = useState(0);
   let [Time, setTime] = useState(0);
+  let [multi, setMulti] = useState(1);
   setInterval(() => setTime(performance.now()), 1000);
   return (
     <div className="screen">
@@ -36,7 +37,7 @@ export default function GameScreen() {
           time={`Czas: ${Math.floor(Time / 1000)}s`}
         />
       </div>
-      <SideBar />
+      <PowerUpsTab clicks={clicks} onUpdate={onUpdate}/>
     </div>
   );
 
@@ -54,6 +55,11 @@ export default function GameScreen() {
       alert("Tak się nie bawimy");
       return;
     }
-    setClicks(++clicks);
+    setClicks(clicks + multi);
+  }
+  function onUpdate(price, pMulti)
+  {
+    setClicks(clicks - price);
+    setMulti(multi + pMulti)
   }
 }

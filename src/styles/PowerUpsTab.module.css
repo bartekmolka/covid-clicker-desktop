@@ -1,0 +1,11 @@
+.tab
+{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 50vh;
+    border: 2px solid var(--text-color);
+    width: 60vw;
+    margin: 5px;
+    border-radius: 5px;
+}

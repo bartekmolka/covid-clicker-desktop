@@ -1,0 +1,49 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(123, 123, 123, 0.125);
+    border-radius: 10px;
+    padding: 3vmin;
+    backdrop-filter: blur(1000px);
+    width: 53vw;
+}
+.info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailscontainer
+{
+    display: flex;
+    flex-direction: column;
+}
+.photo
+{
+    height: 10vh;
+}
+.multi
+{
+    font-size: larger;
+}
+.btn
+{
+    border: 0px solid transparent;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.btnd
+{
+    border: 0px solid transparent;
+    color: var(--text-color);
+    opacity: 0.5;
+    background-color: var(--bg-color);
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
