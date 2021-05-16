@@ -4,6 +4,7 @@ import ClickCounter from "../components/ClickCounter";
 import Virus from "../components/Virus";
 import Win from "../components/Win";
 import PowerUpsTab from "../components/PowerUpsTab";
+import music from "../music.json";
 
 let newCases;
 const date = new Date();
@@ -60,6 +61,10 @@ export default function GameScreen() {
   }
   function onUpdate(price, pMulti)
   {
+    if(multi === "music")
+    {
+      (new Audio(music[Math.floor(Math.random() * music.length)])).play();
+    }
     setClicks(clicks - price);
     setMulti(multi + pMulti)
   }
