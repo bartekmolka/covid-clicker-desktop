@@ -43,10 +43,11 @@ export default function GameScreen() {
 
   function onWin() {
     if (clicks >= newCases) {
-      if (winTime) 
-      winTime = performance.now()
+      if (!winTime)
+        winTime = performance.now()
+      console.log(winTime)
       return (
-        <Win score={clicks} time={winTime} />
+        <Win score={clicks} time={Math.floor(winTime / 1000)} />
       )
     }
   }
