@@ -12,6 +12,7 @@ let winTime;
 
 var valuT = "2021-" + (date.getMonth() + 1) + "-" + (date.getDate() - 1);
 var valuY = "2021-" + (date.getMonth() + 1) + "-" + (date.getDate() - 2);
+let musicPlayer = null;
 
 console.log(valuY, valuT);
 
@@ -61,11 +62,16 @@ export default function GameScreen() {
   }
   function onUpdate(price, pMulti)
   {
-    if(multi === "music")
+    if(pMulti === "music")
     {
-      (new Audio(music[Math.floor(Math.random() * music.length)])).play();
+      const musicId = Math.floor(Math.random() * music.length);
+      if(musicPlayer !== null) musicPlayer.pause();
+      musicPlayer = new Audio(music[musicId]);
+      musicPlayer.play(); 
+    }else
+    {
+      setMulti(multi + pMulti)
     }
     setClicks(clicks - price);
-    setMulti(multi + pMulti)
   }
 }
