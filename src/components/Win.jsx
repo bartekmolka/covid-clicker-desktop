@@ -8,8 +8,9 @@ export default function Win({ score, time }) {
                 <p>Liczba pokonanych koronawirusów {score}</p>
                 <p>Twój czas: {time}s</p>
                 <a href=".">
-                    <button>Zagraj ponownie</button>
+                    <button className={styles.btn}>Zagraj ponownie</button>
                 </a>
+                
             </div>
         </div>
     )

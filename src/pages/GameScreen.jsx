@@ -44,7 +44,7 @@ export default function GameScreen() {
   );
 
   function onWin() {
-    if (clicks >= newCases) {
+    if (clicks >= 1) {
       if (!winTime)
         winTime = performance.now()
       console.log(winTime)

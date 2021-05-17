@@ -14,11 +14,11 @@
         "photo": "https://imagazine.pl/wp-content/uploads/2015/07/itunesicon2.jpg"
     },
     {
-        "name": "Kot Prezesa",
-        "desc": "Pożera dodatkowe 2 koronawirusy podczas kadego kliknięcia",
-        "price": 1000,
-        "multi": 2,
-        "photo": "https://pbs.twimg.com/profile_images/1111796873348698112/iUCukU8Q_400x400.jpg"
+        "name": "Zakup szczepionek ",
+        "desc": "Jednorazowe zmniejszenie koronawirusów o 500",
+        "price": 750,
+        "multi": -500,
+        "photo": "https://news.usc.edu/files/2020/06/covid_vaccine_stock.jpg"
     },
     {
         "name": "Kot Prezesa",
