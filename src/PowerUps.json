@@ -10,7 +10,7 @@
         "name": "Relaksująca muzyka",
         "desc": "Umila czas podczas klikania",
         "price": 50,
-        "multi": 0,
+        "multi": "music",
         "photo": "https://imagazine.pl/wp-content/uploads/2015/07/itunesicon2.jpg"
     },
     {
