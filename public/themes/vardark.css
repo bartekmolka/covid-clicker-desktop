@@ -2,7 +2,7 @@
 {
     --primary-color: rgb(211, 25, 25);
     --secondary-color: rgba(137,53,0,1);
-    --gradient: rgb(34, 34, 34);
+    --gradient: linear-gradient(90deg, rgba(27,26,92,1) 10%, rgba(82,13,3,1) 52%, rgba(0,0,0,1) 100%);
     --bg-color: rgb(34, 34, 34);
     --text-color:rgb(255, 255, 255);
     
