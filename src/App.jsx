@@ -4,10 +4,12 @@ import Foot from "./components/Foot";
 import GameScreen from "./pages/GameScreen";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import { CookiesProvider } from 'react-cookie';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default function App() {
   return (
+    <CookiesProvider>
     <Router>
       <Navbar />
       <Switch>
@@ -23,5 +25,6 @@ export default function App() {
       </Switch>
       <Foot />
     </Router>
+    </CookiesProvider>
   );
 }
