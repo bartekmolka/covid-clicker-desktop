@@ -53,12 +53,22 @@
         text-transform: uppercase;
         z-index: 1;
     }
-
+    .list
+    {
+        display: none;
+    }
 
 
     .burger {
         display: block;
     }
+}
+.logo
+{
+    height: 3vh;
+    background-color: var(--text-color);
+    padding: 5px;
+    border-radius: 999999px;
 }
 
 .burgeron .line1 {

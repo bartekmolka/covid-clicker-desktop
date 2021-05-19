@@ -25,7 +25,7 @@ export default function Navbar() {
         <ThemeSwitch />
       </ul>
 
-      {/* Piotrek wstaw tu logo */}
+      <img className={styles.logo} src="/favicon.ico" alt="logo"/>
     </nav>
   );
 }
