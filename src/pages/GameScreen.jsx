@@ -31,11 +31,12 @@ export default function GameScreen() {
   let [Time, setTime] = useState(0);
   let [multi, setMulti] = useState(1);
 
-  if (cookies['time'] && !startTime) {
+  if (cookies['time'] && startTime == undefined) {
     startTime = parseInt(cookies['time']);
-  } else {
+  } else if(startTime == undefined) {
     startTime = date.getTime();
   }
+  console.log(cookies['time'], startTime, Date.now());
   setInterval(() => setTime(Date.now() - startTime), 1000);
 
   return (
