@@ -39,8 +39,9 @@
     .mainon > ul {
         position: absolute;
         left: 0px;
-        height: 86vh;
+        height: 90%;
         top: 5vh;
+        bottom: 5vh;
         background-color: var(--primary-color);
         justify-content: space-around;
         width: 50%;
@@ -52,6 +53,7 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         z-index: 1;
+        transition: all 0.5s ease-in;
     }
     .list
     {

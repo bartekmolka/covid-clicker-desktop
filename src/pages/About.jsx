@@ -6,7 +6,7 @@ export default function About() {
     <div className={styles.oNas}>
       <div className={styles.tekst}>
         <div id="1">Autorami tej strony internetowej są:</div>
-        <ul id="2" className={styles.lista}>
+        <ul id="2">
           <li>Piotr Nowakowski</li>
           <li>Bartosz Mółka</li>
           <li>Bartosz Turczyński</li>

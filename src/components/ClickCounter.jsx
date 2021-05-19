@@ -1,7 +1,3 @@
-import { render } from "@testing-library/react";
-import { useState } from "react";
-import { nativeTouchData } from "react-dom/cjs/react-dom-test-utils.development";
-import { NavLink } from "react-router-dom";
 import * as styles from "../styles/ClickCounter.module.css";
 import "react-notifications-component/dist/theme.css";
 export default function ClickCounter({ clickCount, clicksToWin, time }) {
