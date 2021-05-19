@@ -15,7 +15,7 @@
     },
     {
         "name": "Zakup szczepionek ",
-        "desc": "Jednorazowe zmniejszenie koronawirusów o 500",
+        "desc": "Zmniejszenie liczby koronawirusów o 500",
         "price": 750,
         "multi": -500,
         "photo": "https://news.usc.edu/files/2020/06/covid_vaccine_stock.jpg"
