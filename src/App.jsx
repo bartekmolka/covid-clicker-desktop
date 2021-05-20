@@ -1,4 +1,4 @@
-import "./App.css";
+import * as styles from "./App.css";
 import Navbar from "./components/Navbar";
 import Foot from "./components/Foot";
 import GameScreen from "./pages/GameScreen";

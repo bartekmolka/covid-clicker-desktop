@@ -9,3 +9,10 @@
     margin: 5px;
     border-radius: 5px;
 }
+
+@media screen and (max-width:768px) {
+
+    .tab {
+        width: 100%;
+    }
+}

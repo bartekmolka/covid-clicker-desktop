@@ -38,8 +38,7 @@
     
     .mainon > ul {
         position: absolute;
-        left: 0px;
-        height: 90%;
+        height: 100%;
         top: 5vh;
         bottom: 5vh;
         background-color: var(--primary-color);
@@ -54,12 +53,12 @@
         text-transform: uppercase;
         z-index: 1;
         transition: all 0.5s ease-in;
+        border-radius: 0px 0px 5vh 0px;
     }
     .list
     {
         display: none;
     }
-
 
     .burger {
         display: block;

@@ -40,6 +40,7 @@ export default function GameScreen() {
         />
       </div>
       <PowerUpsTab clicks={clicks} onUpdate={onUpdate}/>
+      <div className={styles.pusty}></div>
     </div>
   );
 
