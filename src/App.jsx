@@ -4,6 +4,7 @@ import Foot from "./components/Foot";
 import GameScreen from "./pages/GameScreen";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Download from "./pages/Download";
 import { CookiesProvider } from 'react-cookie';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -18,6 +19,9 @@ export default function App() {
         </Route>
         <Route path="/o-nas">
           <About />
+        </Route>
+        <Route path="/download">
+          <Download/>
         </Route>
         <Route path="/">
           <GameScreen />
