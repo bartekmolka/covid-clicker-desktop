@@ -27,6 +27,12 @@
     <meta name="twitter:title" content="Covid Clicker" />
     <meta name="twitter:description" content="Gra przeglądarkowa o tematyce koronawirusa" />
     <title>Covid clicker</title>
+    <link href = "manifest.json" rel = "manifest">
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
   </head>
   <body>
     <noscript>Włącz javascript</noscript>
