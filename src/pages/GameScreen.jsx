@@ -4,6 +4,7 @@ import ClickCounter from "../components/ClickCounter";
 import Virus from "../components/Virus";
 import Win from "../components/Win";
 import PowerUpsTab from "../components/PowerUpsTab";
+import Advert from "../components/Advert";
 import music from "../music.json";
 
 let newCases;
@@ -40,6 +41,7 @@ export default function GameScreen() {
         />
       </div>
       <PowerUpsTab clicks={clicks} onUpdate={onUpdate}/>
+      <Advert/>
       <div className={styles.pusty}></div>
     </div>
   );
