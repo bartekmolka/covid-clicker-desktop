@@ -22,6 +22,7 @@ export default function Navbar() {
         <NavLink name="Covid clicker" link="/" />
         <NavLink name="O nas" link="/o-nas" />
         <NavLink name="Kontakt" link="/kontakt" />
+        <NavLink name="Pobierz" link="/download" />
         <ThemeSwitch />
       </ul>
 
